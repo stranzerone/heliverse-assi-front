@@ -1,0 +1,86 @@
+/* ProfileCard.css */
+.profile-card-container {
+  
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .team-card {
+    background-color: antiquewhite;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 2rem 20vw;
+    width: 100%;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .profile-details p {
+    margin: 10px 0;
+  }
+  
+  /* Add more styling as needed */
+.profile-card-container input{
+    width: 20rem;
+    height: 1.5rem;
+    background-color: #f4e9e9;
+    border-radius: 10px;
+
+}  
+.nameInput{
+  width: 20rem;
+}
+
+.profile-card-container label{
+    width: 10rem;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+
+}  
+
+
+.teamName{
+    font-weight: 800;
+    color: rgb(235, 198, 198);
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-align: center;
+}
+
+.labelBox{
+    display: flex;
+    justify-content: center;
+}
+
+.profileBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.backButton{
+position: absolute;
+align-items: end;
+border-radius: 1rem;
+height: auto;
+margin-top: 1rem;
+float: right;
+}
+
+button{
+    border-radius: 1rem;
+}
+

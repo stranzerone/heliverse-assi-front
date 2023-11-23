@@ -1,0 +1,31 @@
+ <div className="container">
+      {currentPageItems.map((content, index) => (
+        <div key={index} className="box">
+          <div className="profile-card">
+            <img className="avatar" src={content.avatar} alt="Avatar" />
+            <div className="user-info">
+              <h2>{content.first_name} {content.last_name}</h2>
+              <h2>{content.gender}</h2>
+              <p>Email: {content.email}</p>
+              {/* Additional content display based on your data structure */}
+              <p className="gender-icon">{/* Your content here */}</p>
+            </div>
+            <div>
+              <button  onClick={() => addUser(content)}>Add To Team</button>
+              <button className='ml-5'>Detete User</button>
+            </div>
+          </div>
+        </div>
+      ))}
+      <div className="pagination">
+        {visiblePages.map((pageNumber) => (
+          <button
+            key={pageNumber}
+            onClick={() => handlePageChange(pageNumber)}
+            className={currentPage === pageNumber ? 'active' : ''}
+          >
+            {pageNumber}
+          </button>
+        ))}
+      </div>
+    </div>
