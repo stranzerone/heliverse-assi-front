@@ -7,12 +7,13 @@ export const fetchedData = async () => {
  
  
   try {
-    const response = await axios.get("http://localhost:5000", {
+    const response = await axios.get("https://heli-back.onrender.com", {
       headers: {
         "Content-Type": "application/json",
         // You can add more headers as needed
       },
     });
+    console.log(response.data)
 
     if (response && response.data) {
       return response.data
@@ -30,7 +31,7 @@ export const addUsers = async (firstName,lastName,gender,email,domain,availabili
   try {
     const id = nanoid()
     console.log(firstName,lastName,gender,email,domain,availability)
-    const response = await axios.post("http://localhost:5000/createUser",{id,firstName,lastName,gender,email,domain,availability}, {
+    const response = await axios.post("https://heli-back.onrender.com/createUser",{id,firstName,lastName,gender,email,domain,availability}, {
       headers: {
         "Content-Type": "application/json",
         // You can add more headers as needed
@@ -54,7 +55,7 @@ export const delUser = async (id) => {
   try {
     console.log(id);
 
-    const response = await axios.delete(`http://localhost:5000/deleteUser/${id}`, {
+    const response = await axios.delete(`https://heli-back.onrender.com/deleteUser/${id}`, {
       headers: {
         "Content-Type": "application/json",
         // You can add more headers as needed
